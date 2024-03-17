@@ -9,7 +9,9 @@ func TestArraySum(t *testing.T) {
 	//[N]type{value1, value2, ..., valueN} e.g. nums := [3]int{1, 2, 3}
 	// [...]type{value1, value2, ..., valueN} e.g. nums := [...]int{1, 2, 3, 4, 5}
 
-	nums := []int{1, 2, 3, 4}
+	nums := [4]int{1, 2, 3, 4}
+	// array is of fixed size , if we ommit the size then it is a slice
+
 	got := sum(nums)
 	got2 := sumRange(nums)
 	expected := 10

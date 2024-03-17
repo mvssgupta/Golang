@@ -2,7 +2,7 @@ package main
 
 //using classic for loop
 
-func sum(nums []int) (result int) {
+func sum(nums [4]int) (result int) {
 	for i := 0; i < len(nums); i++ {
 		result += nums[i]
 	}
@@ -18,7 +18,7 @@ func sum(nums []int) (result int) {
 // range returns two values - the index and the value.
 // We are choosing to ignore the index value by using _ blank indicator
 
-func sumRange(nums []int) (result int) {
+func sumRange(nums [4]int) (result int) {
 	for _, value := range nums {
 		result += value
 	}
